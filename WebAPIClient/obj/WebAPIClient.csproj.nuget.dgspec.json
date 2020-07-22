@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/rustam/WebAPIClient/WebAPIClient.csproj": {}
+  },
+  "projects": {
+    "/home/rustam/WebAPIClient/WebAPIClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/rustam/WebAPIClient/WebAPIClient.csproj",
+        "projectName": "WebAPIClient",
+        "projectPath": "/home/rustam/WebAPIClient/WebAPIClient.csproj",
+        "packagesPath": "/home/rustam/.nuget/packages/",
+        "outputPath": "/home/rustam/WebAPIClient/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/rustam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
