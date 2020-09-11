@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/rustam/Project/cat_dog/Api/BooksApi.csproj": {}
+  },
+  "projects": {
+    "/home/rustam/Project/cat_dog/Api/BooksApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/rustam/Project/cat_dog/Api/BooksApi.csproj",
+        "projectName": "BooksApi",
+        "projectPath": "/home/rustam/Project/cat_dog/Api/BooksApi.csproj",
+        "packagesPath": "/home/rustam/.nuget/packages/",
+        "outputPath": "/home/rustam/Project/cat_dog/Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/rustam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
