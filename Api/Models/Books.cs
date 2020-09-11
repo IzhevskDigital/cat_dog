@@ -10,12 +10,12 @@ namespace BooksApi.Models
         public string Id { get; set; }
 
         [BsonElement("Name")]
-        public string BookName { get; set; }
+        public string PetName { get; set; }
 
-        public decimal Price { get; set; }
+        public decimal Age { get; set; }
 
-        public string Category { get; set; }
+        public string Gender { get; set; }
 
-        public string Author { get; set; }
+        public string Pet { get; set; }
     }
 }

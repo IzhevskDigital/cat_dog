@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/rustam/books/BooksApi/BooksApi.csproj": {}
+    "/home/rustam/Project/cat_dog/Api/BooksApi.csproj": {}
   },
   "projects": {
-    "/home/rustam/books/BooksApi/BooksApi.csproj": {
+    "/home/rustam/Project/cat_dog/Api/BooksApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rustam/books/BooksApi/BooksApi.csproj",
+        "projectUniqueName": "/home/rustam/Project/cat_dog/Api/BooksApi.csproj",
         "projectName": "BooksApi",
-        "projectPath": "/home/rustam/books/BooksApi/BooksApi.csproj",
+        "projectPath": "/home/rustam/Project/cat_dog/Api/BooksApi.csproj",
         "packagesPath": "/home/rustam/.nuget/packages/",
-        "outputPath": "/home/rustam/books/BooksApi/obj/",
+        "outputPath": "/home/rustam/Project/cat_dog/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/rustam/.nuget/NuGet/NuGet.Config"
@@ -39,6 +39,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.11.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [

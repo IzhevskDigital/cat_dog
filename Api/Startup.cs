@@ -32,6 +32,8 @@ namespace BooksApi
     services.Configure<BookstoreDatabaseSettings>(
         Configuration.GetSection(nameof(BookstoreDatabaseSettings)));
 
+services.AddSwaggerGen();
+
   services.AddSingleton<IBookstoreDatabaseSettings>(sp =>
         sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
 
@@ -53,7 +55,12 @@ services.AddSingleton<BookService>();
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Test API V1");
+            });
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
