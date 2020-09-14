@@ -1,0 +1,22 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Зайка",
+	  "photoURL": "https://sun7-9.userapi.com/UTr9SoyQwgX0VZskQ4vKipV-mcw-gzqqHjWSLA/I6AqM-nupKI.jpg",
+	  "info": "Молодая скромная девочка"
+    },
+	{
+      "id": 2,
+      "name": "Миша",
+	  "photoURL": "https://sun7-6.userapi.com/LKn5prqhNGi3qSwDccgxdl7KixXCBnbyAMmwjg/4afDJtLRgdc.jpg",
+	  "info": "Молодой, бойкий парень"
+    },
+	{
+      "id": 3,
+      "name": "Саша",
+	  "photoURL": "https://sun7-6.userapi.com/6kOhAxb0yQhWUwrAl6Lfq5Z7zhziu3ltA8nZUA/4uCr1srfV1w.jpg",
+	  "info": "Молодая, озорная непоседа"
+    }
+  ],
+}

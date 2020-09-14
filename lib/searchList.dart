@@ -10,11 +10,9 @@ class _SearchState extends State<Search> {
   //Информация животного
   _detailsPage(id) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(0),
-        child: AppBar(
-          elevation: 0,
-        ),
+      appBar: AppBar(
+        title: Text('123'),
+        elevation: 0,
       ),
       body: ListView(
         children: <Widget>[
@@ -24,7 +22,7 @@ class _SearchState extends State<Search> {
                 'https://sun1-83.userapi.com/pG8qjz_LYLwR2m_NrgZD0WIdYeRAbGDoaZ9drQ/vUtLAaKnE24.jpg'),
           ),
           Container(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(16),
             child: Text('инфа'),
           ),
           ListTile(
@@ -56,22 +54,6 @@ class _SearchState extends State<Search> {
     ));
   }
 
-  //Фильтр
-  filterDialog(BuildContext context) {
-    return showModalBottomSheet(
-        context: context,
-        builder: (context) {
-          return Column(
-            children: <Widget>[
-              ListTile(
-                title: Text('123'),
-                leading: Icon(Icons.add_comment),
-              )
-            ],
-          );
-        });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,30 +64,8 @@ class _SearchState extends State<Search> {
         slivers: <Widget>[
           SliverAppBar(
             title: Text('Животные приюта'),
-            bottom: PreferredSize(
-                child: Container(
-                  child: Center(
-                    child: ListTile(
-                      title: Text(
-                        'Фильтр',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      onTap: () {
-                        filterDialog(context);
-                      },
-                      leading: Icon(
-                        Icons.filter_list,
-                        color: Theme.of(context).textTheme.bodyText1.color,
-                      ),
-                    ),
-                  ),
-                  height: 56.0,
-                ),
-                preferredSize: Size.fromHeight(56.0)),
             elevation: 0,
             floating: true,
-            pinned: true,
-            snap: true,
           ),
           SliverGrid(
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
